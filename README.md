@@ -8,7 +8,7 @@ This directory contains **URDF** descriptions of dexterous hands, packaged in a 
 
 **Folder naming:** each package directory uses **model line first**, then **`_left`** or **`_right`** (e.g. `gaiahand20_left`, `pantheonhand_right`). The main **URDF/CSV** files in `urdf/` use the same pattern (**`gaiahand20_right.urdf`**, not `right_gaiahand20.urdf`). Link and joint names inside the file may still use the historical `left_*` / `right_*` prefix for hardware alignment.
 
-# Repository Structure
+## Repository Structure
 ```
 04.2_hand_description/                                   # Stellarobot dexterous hand URDF model collection
   ├── gaiahand20_left/                                   # ROS package: gaiahand20_left(20 joints) 
