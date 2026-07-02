@@ -11,7 +11,7 @@ This repository contains **URDF** descriptions of dexterous hands, packaged in a
 ## Repository Structure
 ```
 hand_description/                                        # Stellarobot dexterous hand URDF model collection
-  ├── gaiahand20_left/                                   # ROS package: gaiahand20_left
+  ├── gaiahand20_left/                                   # ROS package: gaiahand20_left(20 joints)
   │   ├── config/joint_names_left_gaiahand20.yaml        # Joint name list  
   │   ├── launch/                                        # Launch files  
   │   │   ├── display.launch                             # ROS launch: Start RViz visualization  
