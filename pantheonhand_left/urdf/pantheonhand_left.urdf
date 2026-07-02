@@ -1,0 +1,1207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="pantheonhand_left">
+  <link
+    name="left_base_link">
+    <inertial>
+      <origin
+        xyz="0.00168664920293 -0.000530064138127048 0.0453681955050075"
+        rpy="0 0 0" />
+      <mass
+        value="0.156946418626479" />
+      <inertia
+        ixx="0.000204434900271981"
+        ixy="-7.36377548971874E-07"
+        ixz="2.97357172320139E-06"
+        iyy="0.000119402855489155"
+        iyz="4.58171001773265E-06"
+        izz="8.89150103010284E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pantheonhand_left/meshes/left_base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pantheonhand_left/meshes/left_base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="left_thumb_link_1">
+    <inertial>
+      <origin
+        xyz="0.0121283441625976 0.000346780962483112 0.00154097471093358"
+        rpy="0 0 0" />
+      <mass
+        value="0.00278392801372663" />
+      <inertia
+        ixx="5.05148240731842E-08"
+        ixy="-2.10454574936135E-09"
+        ixz="8.03788133581144E-09"
+        iyy="1.136300632484E-07"
+        iyz="-1.21623866507893E-09"
+        izz="1.25490580061156E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pantheonhand_left/meshes/left_thumb_link_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pantheonhand_left/meshes/left_thumb_link_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_thumb_joint_1"
+    type="revolute">
+    <origin
+      xyz="0.0192328874807807 -0.0320362146028932 0.0523997872812908"
+      rpy="-0.17448327037252 0.00220506619361744 -0.0245911681514775" />
+    <parent
+      link="left_base_link" />
+    <child
+      link="left_thumb_link_1" />
+    <axis
+      xyz="-0.00644133519365978 0 0.999979254385271" />
+    <limit
+      lower="-1.570798"
+      upper="1.570798"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="left_thumb_link_2">
+    <inertial>
+      <origin
+        xyz="0.0139234225157783 -0.000495774408870789 -0.000831788737160707"
+        rpy="0 0 0" />
+      <mass
+        value="0.00829203205481294" />
+      <inertia
+        ixx="4.54238413727955E-07"
+        ixy="4.21239415593662E-08"
+        ixz="-1.56635766079371E-08"
+        iyy="1.19323170639001E-06"
+        iyz="4.99728653945201E-09"
+        izz="9.91672500133697E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pantheonhand_left/meshes/left_thumb_link_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pantheonhand_left/meshes/left_thumb_link_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_thumb_joint_2"
+    type="revolute">
+    <origin
+      xyz="0.0194059144947378 0 0"
+      rpy="1.57064280944819 -0.00643955011383733 0.0238354127943055" />
+    <parent
+      link="left_thumb_link_1" />
+    <child
+      link="left_thumb_link_2" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-0.174533"
+      upper="1.570798"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="left_thumb_link_3">
+    <inertial>
+      <origin
+        xyz="0.0163555895229811 -0.00169977030701818 -0.000759654331089606"
+        rpy="0 0 0" />
+      <mass
+        value="0.0065889424446742" />
+      <inertia
+        ixx="2.51646918343884E-07"
+        ixy="-3.68459991264247E-08"
+        ixz="-1.6043148312662E-10"
+        iyy="6.73479253590284E-07"
+        iyz="-2.4436117352038E-10"
+        izz="5.57845845236586E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pantheonhand_left/meshes/left_thumb_link_3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pantheonhand_left/meshes/left_thumb_link_3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_thumb_joint_3"
+    type="revolute">
+    <origin
+      xyz="0.027484655172 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="left_thumb_link_2" />
+    <child
+      link="left_thumb_link_3" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-0.174533"
+      upper="1.570798"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="left_thumb_link_4">
+    <inertial>
+      <origin
+        xyz="0.0153308948866093 6.84764582316311E-05 -0.00108730237610093"
+        rpy="0 0 0" />
+      <mass
+        value="0.00447250031356173" />
+      <inertia
+        ixx="1.48692155879126E-07"
+        ixy="-3.70533505980315E-08"
+        ixz="2.49459623928695E-09"
+        iyy="4.26678774643996E-07"
+        iyz="-8.06164503174783E-10"
+        izz="3.44240914234761E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pantheonhand_left/meshes/left_thumb_link_4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pantheonhand_left/meshes/left_thumb_link_4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_thumb_joint_4"
+    type="revolute">
+    <origin
+      xyz="0.0285010151100005 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="left_thumb_link_3" />
+    <child
+      link="left_thumb_link_4" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-0.174533"
+      upper="1.570798"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="left_index_link_1">
+    <inertial>
+      <origin
+        xyz="0.0121329675819766 8.8692728386984E-05 0.00154102680977615"
+        rpy="0 0 0" />
+      <mass
+        value="0.00278392774972524" />
+      <inertia
+        ixx="5.04537989496389E-08"
+        ixy="-7.62358599015052E-10"
+        ixz="8.00987617781092E-09"
+        iyy="1.13691514436735E-07"
+        iyz="-1.38848868514591E-09"
+        izz="1.25490352031963E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pantheonhand_left/meshes/left_index_link_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pantheonhand_left/meshes/left_index_link_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_index_joint_1"
+    type="revolute">
+    <origin
+      xyz="0.000129999977851972 -0.0336432099112126 0.0890967728601005"
+      rpy="0.380411238954845 -1.56385707989153 2.76118971457883" />
+    <parent
+      link="left_base_link" />
+    <child
+      link="left_index_link_1" />
+    <axis
+      xyz="-0.00644314383712838 0 0.999979242733315" />
+    <limit
+      lower="-0.174533"
+      upper="0.785399"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="left_index_link_2">
+    <inertial>
+      <origin
+        xyz="0.0139234426078955 -0.000495735624244834 -0.000419184083551717"
+        rpy="0 0 0" />
+      <mass
+        value="0.00829193119190597" />
+      <inertia
+        ixx="4.54235009124634E-07"
+        ixy="4.21230771862871E-08"
+        ixz="-1.56620241085726E-08"
+        iyy="1.19323594094822E-06"
+        iyz="4.99766274080381E-09"
+        izz="9.91675669100838E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pantheonhand_left/meshes/left_index_link_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pantheonhand_left/meshes/left_index_link_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_index_joint_2"
+    type="revolute">
+    <origin
+      xyz="0.0194004670949033 0 0"
+      rpy="1.57077972544573 -0.0064431670311451 0.002576594276142" />
+    <parent
+      link="left_index_link_1" />
+    <child
+      link="left_index_link_2" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-0.174533"
+      upper="1.570798"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="left_index_link_3">
+    <inertial>
+      <origin
+        xyz="0.0163555300303855 -0.00169966737275042 -0.000347146898351025"
+        rpy="0 0 0" />
+      <mass
+        value="0.00658896863694796" />
+      <inertia
+        ixx="2.51646967656764E-07"
+        ixy="-3.68442105392275E-08"
+        ixz="-1.58870293980397E-10"
+        iyy="6.73483716133116E-07"
+        iyz="-2.4476759049301E-10"
+        izz="5.57853765604237E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pantheonhand_left/meshes/left_index_link_3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pantheonhand_left/meshes/left_index_link_3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_index_joint_3"
+    type="revolute">
+    <origin
+      xyz="0.027484655172 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="left_index_link_2" />
+    <child
+      link="left_index_link_3" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-0.174533"
+      upper="1.570798"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="left_index_link_4">
+    <inertial>
+      <origin
+        xyz="0.015330812750753 6.84522779099972E-05 -0.000674753520375673"
+        rpy="0 0 0" />
+      <mass
+        value="0.0044724803409985" />
+      <inertia
+        ixx="1.48691268491181E-07"
+        ixy="-3.70531145268294E-08"
+        ixz="2.49326932431299E-09"
+        iyy="4.26675617116266E-07"
+        iyz="-8.05971751624395E-10"
+        izz="3.4423807424302E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pantheonhand_left/meshes/left_index_link_4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pantheonhand_left/meshes/left_index_link_4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_index_joint_4"
+    type="revolute">
+    <origin
+      xyz="0.0285010151100001 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="left_index_link_3" />
+    <child
+      link="left_index_link_4" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-0.174533"
+      upper="1.570798"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="left_middle_link_1">
+    <inertial>
+      <origin
+        xyz="0.0122143690923557 8.96470993118625E-05 0.00110178568720551"
+        rpy="0 0 0" />
+      <mass
+        value="0.00267488998389723" />
+      <inertia
+        ixx="5.06258405995999E-08"
+        ixy="-8.3546403600132E-10"
+        ixz="1.19623439852829E-08"
+        iyy="1.12284811261456E-07"
+        iyz="-1.34773507237876E-09"
+        izz="1.22963067495561E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pantheonhand_left/meshes/left_middle_link_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pantheonhand_left/meshes/left_middle_link_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_middle_joint_1"
+    type="revolute">
+    <origin
+      xyz="0.000129999992993415 -0.010643209911212 0.0940967728601002"
+      rpy="3.09504680973389 -1.51681106440103 0.0464781305516493" />
+    <parent
+      link="left_base_link" />
+    <child
+      link="left_middle_link_1" />
+    <axis
+      xyz="0.0539007725741799 0 0.998546296731357" />
+    <limit
+      lower="-0.349066"
+      upper="0.349066"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="left_middle_link_2">
+    <inertial>
+      <origin
+        xyz="0.0134705658714897 -0.00109804794791253 -0.000419199010890603"
+        rpy="0 0 0" />
+      <mass
+        value="0.00829193120065996" />
+      <inertia
+        ixx="4.51954080464114E-07"
+        ixy="9.14015073959633E-09"
+        ixz="-1.58686986446859E-08"
+        iyy="1.19551687986071E-06"
+        iyz="4.29654166172431E-09"
+        izz="9.91675679152108E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pantheonhand_left/meshes/left_middle_link_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pantheonhand_left/meshes/left_middle_link_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_middle_joint_2"
+    type="revolute">
+    <origin
+      xyz="0.0199440555053375 0 0"
+      rpy="1.57093231113838 0.0983918588987886 0.00252037349408585" />
+    <parent
+      link="left_middle_link_1" />
+    <child
+      link="left_middle_link_2" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-0.174533"
+      upper="1.570798"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="left_middle_link_3">
+    <inertial>
+      <origin
+        xyz="0.0163554805793668 -0.00808118848358938 -0.0719008795326774"
+        rpy="0 0 0" />
+      <mass
+        value="0.0131780288649246" />
+      <inertia
+        ixx="5.03288186174935E-07"
+        ixy="-7.30805950734788E-08"
+        ixz="6.51484952631423E-09"
+        iyy="1.34343179822104E-06"
+        iyz="-2.01510171444369E-08"
+        izz="1.11924780190633E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pantheonhand_left/meshes/left_middle_link_3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pantheonhand_left/meshes/left_middle_link_3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_middle_joint_3"
+    type="revolute">
+    <origin
+      xyz="0.0269963386424268 0 0"
+      rpy="0 0 0.0444651230881845" />
+    <parent
+      link="left_middle_link_2" />
+    <child
+      link="left_middle_link_3" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-0.174533"
+      upper="1.570798"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="left_middle_link_4">
+    <inertial>
+      <origin
+        xyz="0.0153308126860099 6.84522561337358E-05 -0.00067476835702944"
+        rpy="0 0 0" />
+      <mass
+        value="0.00447248046419253" />
+      <inertia
+        ixx="1.48691276049799E-07"
+        ixy="-3.70531156269425E-08"
+        ixz="2.4932714682144E-09"
+        iyy="4.26675624589269E-07"
+        iyz="-8.05970059718438E-10"
+        izz="3.44238076752503E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pantheonhand_left/meshes/left_middle_link_4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pantheonhand_left/meshes/left_middle_link_4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_middle_joint_4"
+    type="revolute">
+    <origin
+      xyz="0.0285010151099999 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="left_middle_link_3" />
+    <child
+      link="left_middle_link_4" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-0.174533"
+      upper="1.570798"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="left_ring_link_1">
+    <inertial>
+      <origin
+        xyz="0.0121329675134276 8.87021156203288E-05 0.00154102680917863"
+        rpy="0 0 0" />
+      <mass
+        value="0.00278392774972521" />
+      <inertia
+        ixx="5.04538001285853E-08"
+        ixy="-7.62407445920287E-10"
+        ixz="8.00987725595944E-09"
+        iyy="1.13691513244161E-07"
+        iyz="-1.38848243422003E-09"
+        izz="1.25490352045589E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pantheonhand_left/meshes/left_ring_link_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pantheonhand_left/meshes/left_ring_link_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_ring_joint_1"
+    type="revolute">
+    <origin
+      xyz="0.00013 0.012357 0.089097"
+      rpy="0.38051 -1.5639 2.7611" />
+    <parent
+      link="left_base_link" />
+    <child
+      link="left_ring_link_1" />
+    <axis
+      xyz="-0.0064431 0 0.99998" />
+    <limit
+      lower="-0.349066"
+      upper="0.349066"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="left_ring_link_2">
+    <inertial>
+      <origin
+        xyz="0.0139234423873446 -0.000495735712221293 -0.000419198542655291"
+        rpy="0 0 0" />
+      <mass
+        value="0.00829193076847684" />
+      <inertia
+        ixx="4.54234979656322E-07"
+        ixy="4.21230752261858E-08"
+        ixz="-1.56620588259711E-08"
+        iyy="1.1932358934951E-06"
+        iyz="4.9976727506429E-09"
+        izz="9.91675647717701E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pantheonhand_left/meshes/left_ring_link_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pantheonhand_left/meshes/left_ring_link_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_ring_joint_2"
+    type="revolute">
+    <origin
+      xyz="0.0194 0 0"
+      rpy="1.5708 -0.0064432 0.0025774" />
+    <parent
+      link="left_ring_link_1" />
+    <child
+      link="left_ring_link_2" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-0.174533"
+      upper="1.570798"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="left_ring_link_3">
+    <inertial>
+      <origin
+        xyz="0.0163555300179211 -0.00169966739641558 -0.000347161701054866"
+        rpy="0 0 0" />
+      <mass
+        value="0.00658896866848176" />
+      <inertia
+        ixx="2.51646963725428E-07"
+        ixy="-3.68442071215581E-08"
+        ixz="-1.58869673261275E-10"
+        iyy="6.73483711506299E-07"
+        iyz="-2.44760504455752E-10"
+        izz="5.57853759912679E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pantheonhand_left/meshes/left_ring_link_3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pantheonhand_left/meshes/left_ring_link_3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_ring_joint_3"
+    type="revolute">
+    <origin
+      xyz="0.027485 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="left_ring_link_2" />
+    <child
+      link="left_ring_link_3" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-0.174533"
+      upper="1.570798"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="left_ring_link_4">
+    <inertial>
+      <origin
+        xyz="0.0153308121376027 6.84517431433773E-05 -0.000674767994267772"
+        rpy="0 0 0" />
+      <mass
+        value="0.00447248057434014" />
+      <inertia
+        ixx="1.48691271379023E-07"
+        ixy="-3.70530975072756E-08"
+        ixz="2.49328669025995E-09"
+        iyy="4.26675582901673E-07"
+        iyz="-8.059572314611E-10"
+        izz="3.4423802570019E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pantheonhand_left/meshes/left_ring_link_4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pantheonhand_left/meshes/left_ring_link_4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_ring_joint_4"
+    type="revolute">
+    <origin
+      xyz="0.028501 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="left_ring_link_3" />
+    <child
+      link="left_ring_link_4" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-0.174533"
+      upper="1.570798"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="left_little_link_1">
+    <inertial>
+      <origin
+        xyz="0.0121329675134276 8.87021156203427E-05 0.00154102680917859"
+        rpy="0 0 0" />
+      <mass
+        value="0.00278392774972521" />
+      <inertia
+        ixx="5.04538001285852E-08"
+        ixy="-7.62407445920763E-10"
+        ixz="8.00987725595933E-09"
+        iyy="1.13691513244161E-07"
+        iyz="-1.3884824342202E-09"
+        izz="1.25490352045589E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pantheonhand_left/meshes/left_little_link_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pantheonhand_left/meshes/left_little_link_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_little_joint_1"
+    type="revolute">
+    <origin
+      xyz="0.00013 0.035357 0.079597"
+      rpy="0.38051 -1.5639 2.7611" />
+    <parent
+      link="left_base_link" />
+    <child
+      link="left_little_link_1" />
+    <axis
+      xyz="-0.0064431 0 0.99998" />
+    <limit
+      lower="-0.785399"
+      upper="0.174533"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="left_little_link_2">
+    <inertial>
+      <origin
+        xyz="0.0139234423979704 -0.000495735718800627 -0.000419198815065608"
+        rpy="0 0 0" />
+      <mass
+        value="0.00829193097219822" />
+      <inertia
+        ixx="4.54234994888505E-07"
+        ixy="4.21230768247697E-08"
+        ixz="-1.56620479011488E-08"
+        iyy="1.19323590636218E-06"
+        iyz="4.99766388973294E-09"
+        izz="9.91675649120972E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pantheonhand_left/meshes/left_little_link_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pantheonhand_left/meshes/left_little_link_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_little_joint_2"
+    type="revolute">
+    <origin
+      xyz="0.0194 0 0"
+      rpy="1.5708 -0.0064432 0.0025774" />
+    <parent
+      link="left_little_link_1" />
+    <child
+      link="left_little_link_2" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-0.174533"
+      upper="1.570798"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="left_little_link_3">
+    <inertial>
+      <origin
+        xyz="0.0163555299881733 -0.00169966741292214 -0.000347161757937975"
+        rpy="0 0 0" />
+      <mass
+        value="0.00658896867987305" />
+      <inertia
+        ixx="2.51646964262451E-07"
+        ixy="-3.68442092866941E-08"
+        ixz="-1.58873829604124E-10"
+        iyy="6.73483711328433E-07"
+        iyz="-2.44762450908861E-10"
+        izz="5.57853761967596E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pantheonhand_left/meshes/left_little_link_3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pantheonhand_left/meshes/left_little_link_3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_little_joint_3"
+    type="revolute">
+    <origin
+      xyz="0.027485 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="left_little_link_2" />
+    <child
+      link="left_little_link_3" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-0.174533"
+      upper="1.570798"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="left_little_link_4">
+    <inertial>
+      <origin
+        xyz="0.0153308089104759 6.84549837685067E-05 -0.000674765971963004"
+        rpy="0 0 0" />
+      <mass
+        value="0.00447247833940265" />
+      <inertia
+        ixx="1.48691244849669E-07"
+        ixy="-3.70531041268909E-08"
+        ixz="2.49319483880943E-09"
+        iyy="4.26675431502724E-07"
+        iyz="-8.05980204984297E-10"
+        izz="3.44237951566827E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pantheonhand_left/meshes/left_little_link_4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pantheonhand_left/meshes/left_little_link_4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_little_joint_4"
+    type="revolute">
+    <origin
+      xyz="0.028501 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="left_little_link_3" />
+    <child
+      link="left_little_link_4" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-0.174533"
+      upper="1.570798"
+      effort="0"
+      velocity="0" />
+  </joint>
+</robot>
